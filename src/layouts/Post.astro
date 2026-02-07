@@ -1,0 +1,129 @@
+---
+import Base from './Base.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  category: string;
+}
+
+const { title, description, category } = Astro.props;
+---
+
+<Base title={title} description={description}>
+  <article class="post">
+    <header class="post-header">
+      <span class="post-category">{category}</span>
+      <h1>{title}</h1>
+      <p class="post-description">{description}</p>
+    </header>
+
+    <div class="post-content">
+      <slot />
+    </div>
+  </article>
+</Base>
+
+<style>
+  .post {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .post-header {
+    margin-bottom: 3rem;
+    border-bottom: 2px solid #E8F0EB;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+  }
+
+  .post-category {
+    display: inline-block;
+    background: linear-gradient(135deg, #E8F0EB 0%, rgba(232, 240, 235, 0.5) 100%);
+    color: #7FA895;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(127, 168, 149, 0.08);
+    border: 1px solid rgba(127, 168, 149, 0.15);
+  }
+
+  .post h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    color: #2D3436;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+  }
+
+  .post-description {
+    font-size: 1.2rem;
+    color: #7FA895;
+    font-weight: 600;
+    line-height: 1.7;
+  }
+
+  .post-content :global(h2) {
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: #2D3436;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .post-content :global(h2::before) {
+    content: '●';
+    color: #7FA895;
+    font-size: 0.8rem;
+  }
+
+  .post-content :global(p) {
+    margin-bottom: 1.5rem;
+    color: #2D3436;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    font-weight: 500;
+  }
+
+  .post-content :global(strong) {
+    color: #7FA895;
+    font-weight: 700;
+  }
+
+  .post-content :global(em) {
+    color: #7FA895;
+    font-style: italic;
+  }
+
+  .post-content :global(a) {
+    color: #7FA895;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+    font-weight: 700;
+  }
+
+  .post-content :global(a:hover) {
+    color: #2D3436;
+    text-decoration-thickness: 2px;
+  }
+
+  .post-content :global(ul) {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+  }
+
+  .post-content :global(li) {
+    margin-bottom: 0.8rem;
+    color: #2D3436;
+    line-height: 1.8;
+  }
+</style>

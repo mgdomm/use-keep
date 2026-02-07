@@ -1,0 +1,47 @@
+---
+import { getCollection } from 'astro:content';
+import Category from '../layouts/Category.astro';
+
+const allPosts = await getCollection('posts');
+const trabajoPosts = allPosts.filter(post => post.data.category === 'Trabajo');
+---
+
+<Category title="Trabajo" description="Accesorios prácticos y funcionales para mejorar tu espacio de trabajo y produktividad.">
+  <div class="category-articles">
+    <h2>Artículos sobre Trabajo</h2>
+    <ul class="article-list">
+      {trabajoPosts.map(post => (
+        <li class="article-item">
+          <h3>{post.data.title}</h3>
+          <p class="article-description">{post.data.description}</p>
+          <a href={`/${post.slug}/`} class="article-link">Leer artículo →</a>
+        </li>
+      ))}
+    </ul>
+    {trabajoPosts.length === 0 && (
+      <p class="no-articles">No hay artículos aún en esta categoría.</p>
+    )}
+  </div>
+</Category>
+
+<style>
+  .category-articles h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .article-link {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .article-link:hover {
+    text-decoration: underline;
+  }
+
+  .no-articles {
+    color: #999;
+    font-style: italic;
+  }
+</style>

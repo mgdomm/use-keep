@@ -1,0 +1,14 @@
+{
+  "name": "use-and-keep",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Pequeñas cosas que se quedan contigo",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^4.1.0"
+  }
+}

@@ -1,0 +1,114 @@
+---
+import Base from './Base.astro';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<Base title={title} description={description}>
+  <div class="category">
+    <header class="category-header">
+      <h1>{title}</h1>
+      <p class="category-intro">{description}</p>
+    </header>
+
+    <div class="category-content">
+      <slot />
+    </div>
+  </div>
+</Base>
+
+<style>
+  .category-header {
+    margin-bottom: 4rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid #E8F0EB;
+    position: relative;
+  }
+
+  .category-header::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 2px;
+    background: #7FA895;
+  }
+
+  .category h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #2D3436;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+  }
+
+  .category-intro {
+    font-size: 1.2rem;
+    color: #7FA895;
+    max-width: 650px;
+    margin: 0 auto;
+    font-weight: 600;
+    line-height: 1.7;
+  }
+
+  .category-content :global(.article-list) {
+    list-style: none;
+  }
+
+  .category-content :global(.article-item) {
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #E8F0EB;
+    background: linear-gradient(135deg, white 0%, rgba(232, 240, 235, 0.2) 100%);
+    box-shadow: 0 4px 12px rgba(127, 168, 149, 0.08);
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+  }
+
+  .category-content :global(.article-item:hover) {
+    border-left-color: #7FA895;
+    border-color: #7FA895;
+    box-shadow: 0 12px 32px rgba(127, 168, 149, 0.15);
+    transform: translateX(4px);
+  }
+
+  .category-content :global(.article-item h3) {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: #2D3436;
+    font-weight: 700;
+  }
+
+  .category-content :global(.article-item p) {
+    color: #7FA895;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  .category-content :global(.article-item a) {
+    color: #7FA895;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .category-content :global(.article-item a:hover) {
+    color: #2D3436;
+    transform: translateX(4px);
+  }
+
+  .category-content :global(.article-description) {
+    color: #7FA895;
+  }
+</style>
