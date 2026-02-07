@@ -1,0 +1,198 @@
+{
+  "casa": [
+    {
+      "id": "separadores-cajones",
+      "nombre": "Separadores de cajones ajustables con muelle",
+      "precio": "15-25€",
+      "puntuacion": 4.7,
+      "imagen": "https://via.placeholder.com/300x200?text=Separadores",
+      "link": "https://amazon.es/s?k=separadores+cajones+muelle"
+    },
+    {
+      "id": "regleta-enchufes",
+      "nombre": "Regleta con enchufes girados 90°",
+      "precio": "20-30€",
+      "puntuacion": 4.8,
+      "imagen": "https://via.placeholder.com/300x200?text=Regleta",
+      "link": "https://amazon.es/s?k=regleta+enchufes+girados"
+    },
+    {
+      "id": "ganchos-presion",
+      "nombre": "Ganchos de presión sin pegar",
+      "precio": "8-15€",
+      "puntuacion": 4.5,
+      "imagen": "https://via.placeholder.com/300x200?text=Ganchos",
+      "link": "https://amazon.es/s?k=ganchos+presion+adhesivos"
+    },
+    {
+      "id": "temporizador-mecanico",
+      "nombre": "Temporizador mecánico silencioso",
+      "precio": "10-20€",
+      "puntuacion": 4.6,
+      "imagen": "https://via.placeholder.com/300x200?text=Temporizador",
+      "link": "https://amazon.es/s?k=temporizador+mecanico"
+    },
+    {
+      "id": "difusor-grifo",
+      "nombre": "Difusor de grifo con selector oculto",
+      "precio": "12-18€",
+      "puntuacion": 4.4,
+      "imagen": "https://via.placeholder.com/300x200?text=Difusor",
+      "link": "https://amazon.es/s?k=difusor+grifo+agua"
+    }
+  ],
+  "trabajo": [
+    {
+      "id": "soporte-portatil",
+      "nombre": "Soporte plegable para portátil",
+      "precio": "25-40€",
+      "puntuacion": 4.8,
+      "imagen": "https://via.placeholder.com/300x200?text=Soporte",
+      "link": "https://amazon.es/s?k=soporte+portatil+plegable"
+    },
+    {
+      "id": "organizador-cables",
+      "nombre": "Organizador de cables de escritorio",
+      "precio": "15-25€",
+      "puntuacion": 4.6,
+      "imagen": "https://via.placeholder.com/300x200?text=Organizador",
+      "link": "https://amazon.es/s?k=organizador+cables+escritorio"
+    },
+    {
+      "id": "alfombrilla-munequera",
+      "nombre": "Alfombrilla con muñequera",
+      "precio": "20-30€",
+      "puntuacion": 4.7,
+      "imagen": "https://via.placeholder.com/300x200?text=Alfombrilla",
+      "link": "https://amazon.es/s?k=alfombrilla+muñequera"
+    },
+    {
+      "id": "lampara-regulable",
+      "nombre": "Lámpara LED regulable",
+      "precio": "30-50€",
+      "puntuacion": 4.8,
+      "imagen": "https://via.placeholder.com/300x200?text=Lampara",
+      "link": "https://amazon.es/s?k=lampara+led+regulable+escritorio"
+    },
+    {
+      "id": "temporizador-pomodoro",
+      "nombre": "Temporizador Pomodoro físico",
+      "precio": "12-20€",
+      "puntuacion": 4.5,
+      "imagen": "https://via.placeholder.com/300x200?text=Pomodoro",
+      "link": "https://amazon.es/s?k=temporizador+pomodoro"
+    }
+  ],
+  "creatividad": [
+    {
+      "id": "panel-acustico",
+      "nombre": "Panel acústico modular",
+      "precio": "40-80€",
+      "puntuacion": 4.6,
+      "imagen": "https://via.placeholder.com/300x200?text=Panel",
+      "link": "https://amazon.es/s?k=panel+acustico+modular"
+    },
+    {
+      "id": "bloc-reutilizable",
+      "nombre": "Bloc de notas reutilizable",
+      "precio": "15-25€",
+      "puntuacion": 4.7,
+      "imagen": "https://via.placeholder.com/300x200?text=Bloc",
+      "link": "https://amazon.es/s?k=bloc+notas+reutilizable"
+    },
+    {
+      "id": "lampara-temperatura",
+      "nombre": "Lámpara con temperatura ajustable",
+      "precio": "35-60€",
+      "puntuacion": 4.8,
+      "imagen": "https://via.placeholder.com/300x200?text=Lampara2",
+      "link": "https://amazon.es/s?k=lampara+temperatura+color"
+    },
+    {
+      "id": "soporte-lapices",
+      "nombre": "Soporte para lápices de bambú",
+      "precio": "15-25€",
+      "puntuacion": 4.5,
+      "imagen": "https://via.placeholder.com/300x200?text=Soporte",
+      "link": "https://amazon.es/s?k=soporte+lapices+bambu"
+    },
+    {
+      "id": "afilador-lapices",
+      "nombre": "Afilador de lápices de precisión",
+      "precio": "8-15€",
+      "puntuacion": 4.6,
+      "imagen": "https://via.placeholder.com/300x200?text=Afilador",
+      "link": "https://amazon.es/s?k=afilador+lapices+precision"
+    }
+  ],
+  "mascotas": [
+    {
+      "id": "arenero-automatico",
+      "nombre": "Arenero automático para gatos",
+      "precio": "90-150€",
+      "puntuacion": 4.7,
+      "imagen": "https://via.placeholder.com/300x200?text=Arenero",
+      "link": "https://amazon.es/s?k=arenero+automatico+gatos"
+    },
+    {
+      "id": "protector-sofa-rascador",
+      "nombre": "Protector de sofá con zona de rascado",
+      "precio": "40-70€",
+      "puntuacion": 4.6,
+      "imagen": "https://via.placeholder.com/300x200?text=Protector",
+      "link": "https://amazon.es/s?k=protector+sofa+rascador"
+    },
+    {
+      "id": "fuente-agua-mascotas",
+      "nombre": "Fuente de agua para mascotas",
+      "precio": "25-50€",
+      "puntuacion": 4.8,
+      "imagen": "https://via.placeholder.com/300x200?text=Fuente",
+      "link": "https://amazon.es/s?k=fuente+agua+mascotas"
+    }
+  ],
+  "familia": [
+    {
+      "id": "producto-familia-1",
+      "nombre": "Organizador de juguetes compartido",
+      "precio": "20-40€",
+      "puntuacion": 4.5,
+      "imagen": "https://via.placeholder.com/300x200?text=Organizador",
+      "link": "https://amazon.es/s?k=organizador+juguetes"
+    },
+    {
+      "id": "producto-familia-2",
+      "nombre": "Luz nocturna regulable",
+      "precio": "15-30€",
+      "puntuacion": 4.7,
+      "imagen": "https://via.placeholder.com/300x200?text=Luz",
+      "link": "https://amazon.es/s?k=luz+nocturna+regulable"
+    }
+  ],
+  "salud": [
+    {
+      "id": "cojin-lumbar",
+      "nombre": "Cojín lumbar ergonómico",
+      "precio": "30-50€",
+      "puntuacion": 4.6,
+      "imagen": "https://via.placeholder.com/300x200?text=Cojin",
+      "link": "https://amazon.es/s?k=cojin+lumbar+ergonomico"
+    },
+    {
+      "id": "humidificador",
+      "nombre": "Humidificador ultrasónico",
+      "precio": "25-45€",
+      "puntuacion": 4.7,
+      "imagen": "https://via.placeholder.com/300x200?text=Humidificador",
+      "link": "https://amazon.es/s?k=humidificador+ultrasonico"
+    },
+    {
+      "id": "botella-agua",
+      "nombre": "Botella reutilizable con medidas",
+      "precio": "15-30€",
+      "puntuacion": 4.8,
+      "imagen": "https://via.placeholder.com/300x200?text=Botella",
+      "link": "https://amazon.es/s?k=botella+agua+reutilizable+medidas"
+    }
+  ]
+}

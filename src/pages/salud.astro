@@ -1,21 +1,22 @@
 ---
 import Base from '../layouts/Base.astro';
-import { getCollection } from 'astro:content';
+import PostCard from '../components/PostCard.astro';
 import ProductGrid from '../components/ProductGrid.astro';
+import { getCollection } from 'astro:content';
 import products from '../data/products.json';
 
 const allPosts = await getCollection('posts');
 const categoryPosts = allPosts
-  .filter(post => post.data.category === 'Familia')
+  .filter(post => post.data.category === 'Salud')
   .sort((a, b) => (b.data.pubDate?.getTime() || 0) - (a.data.pubDate?.getTime() || 0));
 
-const categoryProducts = products.familia || [];
+const categoryProducts = products.salud || [];
 ---
 
-<Base title="Familia | Use&Keep">
+<Base title="Salud | Use&Keep">
   <div class="category-hero">
-    <h1>Familia</h1>
-    <p>Objetos que facilitan la vida en familia sin ocupar demasiado espacio.</p>
+    <h1>Salud</h1>
+    <p>Pequeños objetos que cuidan de ti sin que te des cuenta.</p>
   </div>
 
   <section class="posts-section">
@@ -23,11 +24,7 @@ const categoryProducts = products.familia || [];
     <div class="posts-grid">
       {categoryPosts.length > 0 ? (
         categoryPosts.map(post => (
-          <div class="post-card">
-            <h3>{post.data.title}</h3>
-            <p class="description">{post.data.description}</p>
-            <a href={`/${post.slug}/`} class="read-more">Leer artículo →</a>
-          </div>
+          <PostCard post={post} />
         ))
       ) : (
         <p>Aún no hay artículos en esta categoría.</p>
@@ -71,43 +68,5 @@ const categoryProducts = products.familia || [];
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
     margin-bottom: 3rem;
-  }
-
-  .post-card {
-    background: #fff;
-    border: 1px solid #e8e5e0;
-    border-radius: 8px;
-    padding: 1.5rem;
-    transition: all 0.3s ease;
-  }
-
-  .post-card:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    border-color: #7fa895;
-  }
-
-  .post-card h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    color: #2d3436;
-  }
-
-  .description {
-    font-size: 0.95rem;
-    color: #666;
-    margin-bottom: 1rem;
-    line-height: 1.5;
-  }
-
-  .read-more {
-    color: #7fa895;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s;
-  }
-
-  .read-more:hover {
-    color: #6a9080;
-    text-decoration: underline;
   }
 </style>
